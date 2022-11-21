@@ -177,6 +177,7 @@ blockquote, q {
 }
 a{
 	text-decoration: none;
+	color: #070707;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -269,6 +270,7 @@ table {
 /* About styles start */
 
 .about{
+	margin-bottom: 91px;
 	background: #F6F6F6;
 	padding: 120px 0 110px 0;
 	text-align: center;
@@ -286,3 +288,136 @@ table {
 }
 
 /* About styles end */
+
+/* Skills styles start */
+
+.skills{
+	margin-bottom: 110px;
+}
+.skills_content{
+	text-align: center;
+}
+.skills_title{
+	margin-bottom: 69px;
+	font-size: 34px;
+	font-weight: bold;
+}
+.skills_desc{
+	margin-bottom: 88px;
+	font-size: 18;
+	font-weight: medium;
+}
+
+
+.skills_programms{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.skills_programm_card{
+	display: flex;
+	flex-direction: column;
+}
+.skills_programm_img{
+	margin-bottom: 24px;
+}
+.skills_programm_name{
+	margin-bottom: 40px;
+}
+.skills_programm_lvl{
+	margin: auto 0 0 0;
+}
+.skills_programm_lvl_stars{
+	margin-right: 10px;
+}
+.skills_programm_lvl_stars:last-child{
+	margin: 0;
+}
+
+/* Skills styles end */
+
+/* Portfolio styles start */
+
+.portfolio{
+	margin-bottom: 114px;
+	background: #F6F6F6;
+	text-align: center;
+}
+.portfolio_content{
+	padding: 112px 0 96px;
+}
+.portfolio_title{
+	margin-bottom: 47px;
+	font-size: 34px;
+	font-weight: bold;
+}
+.portfolio_img{
+	margin-bottom: 44px;
+}
+.portfolio_img_item{
+	width: 100%;
+}
+.portfolio_card_title{
+	margin-bottom: 99px;
+	font-size: 18px;
+	text-decoration-line: underline;
+	font-weight: medium;
+	cursor: pointer;
+	transition: .2s all;
+}
+.portfolio_end_card{
+	margin: 0;
+}
+.portfolio_card_title:hover, .portfolio_card_title:active {
+	opacity: .7;
+}
+/* Portfolio styles end */
+
+/* Footer styles start */
+
+.footer{
+	text-align: center;
+	margin-bottom: 123px;
+}
+.footer_title{
+	margin-bottom: 20px;
+	font-size: 34px;
+	font-weight: bold;
+}
+.footer_desc{
+	margin-bottom: 29px;
+	font-size: 18px;
+	font-weight: medium;
+}
+.footer_link_btn{
+	margin-bottom: 97px;
+}
+.footer_btn{
+	background: #070707;
+	padding: 13px 29px;
+	border-radius: 24px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	transition: .2s all;
+}
+.footer_btn:hover{
+	opacity: .85;
+}
+.footer_socials{
+	margin-bottom: 45px;
+}
+.footer_links_icon_item{
+	margin-right: 60px;
+}
+.footer_end_icon{
+	margin: 0;
+}
+.footer_links, .footer_links_item{
+	font-weight: medium;
+	font-size: 14px;
+	line-height: 17px;
+	color: #828282;
+}
+
+/* Footer styles end */
