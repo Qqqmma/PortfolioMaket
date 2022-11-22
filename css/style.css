@@ -189,6 +189,7 @@ table {
 	border-spacing: 0;
 }
 
+
 .wrapper{
 	padding: 0 30px;
 	max-width: 1003px;
@@ -207,20 +208,37 @@ table {
 }
 /* Header styles start */
 
+
 .header{
-	margin: 32px 0 40px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 111;
+	padding: 32px 0 0 0;
 	font-size: 18px;
 	font-weight: bold;
 }
+.header_active{
+	background-color: #ffffff;
+}
+.header_fixed_container{
+}
 .header_content{
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-end;
 	justify-content: space-between;
 	padding-bottom: 32px;
 	border-bottom: 1px solid #828282;
 }
 .header_link_item{
+	transition: .2s all;
 	color: #828282;
+}
+.header_link_item:hover, .header_link_item:active{
+	color: #070707;
 }
 .main_link {
 	color: #070707;
@@ -231,6 +249,7 @@ table {
 /* Intro styles start */
 
 .intro{
+	margin-top: 118px;
 	margin-bottom: 104px;
 }
 .intro_desc{
@@ -379,13 +398,18 @@ table {
 	text-align: center;
 	margin-bottom: 123px;
 }
+.footer_content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .footer_title{
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	font-size: 34px;
 	font-weight: bold;
 }
 .footer_desc{
-	margin-bottom: 29px;
+	margin-bottom: 50px;
 	font-size: 18px;
 	font-weight: medium;
 }
@@ -405,19 +429,135 @@ table {
 	opacity: .85;
 }
 .footer_socials{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 330px;
 	margin-bottom: 45px;
-}
-.footer_links_icon_item{
-	margin-right: 60px;
-}
-.footer_end_icon{
-	margin: 0;
 }
 .footer_links, .footer_links_item{
 	font-weight: medium;
 	font-size: 14px;
 	line-height: 17px;
 	color: #828282;
+	transition: .2s all;
+}
+.footer_links_item:hover, .footer_links_item:active{
+	color: #070707;
 }
 
 /* Footer styles end */
+
+@media (max-width:726px) {
+	/* Header styles */
+	.header{
+		display: none;
+	}
+
+	/* Itro styles */
+	.intro_content{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		padding-bottom: 32px;
+	}
+	.intro_desc{
+		margin-bottom: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.intro_desc_title{
+		margin-bottom: 27px;
+	}
+	.intro_desc_text{
+	}
+	.intro_leng_setting{
+		position: fixed;
+		visibility: hidden;
+	}
+	.intro_photo_item{
+		object-fit: cover;
+		height: 478px;
+	}
+	.intro_content{
+		padding-bottom: 0;
+	}
+	.intro{
+		margin-top: 65px;
+		margin-bottom: 82px;
+	}
+
+	/* About styles */
+
+	.about{
+		margin-bottom: 81px;
+		background: #F6F6F6;
+		padding: 81px 0 76px 0;
+		text-align: center;
+		line-height: 22px;
+	}
+	.about_title{
+		margin-bottom: 34px;
+		font-size: 34px;
+		font-weight: bold;
+	}
+	.about_text{
+		margin-bottom: 34px;
+		font-size: 18px;
+		font-weight: medium;
+	}
+
+	/* Skills styles */
+
+	.skills{
+		margin-bottom: 98px;
+	}
+	.skills_title{
+		margin-bottom: 50px;
+		font-size: 34px;
+		font-weight: bold;
+	}
+	.skills_desc{
+		margin-bottom: 70px;
+		font-size: 18;
+		font-weight: medium;
+	}
+	.skills_programms{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.skills_programm_card{
+		margin-bottom: 81px;
+	}
+	.skills_programm_card:last-child{
+		margin-bottom: 0;
+	}
+
+	/* Portfolio styles */
+
+	.portfolio{
+		margin-bottom: 82px;
+	}
+	.portfolio_content{
+		padding: 81px 0 1px 0;
+	}
+	.portfolio_title{
+		margin-bottom: 47px;
+	}
+	.portfolio_card_title{
+		margin-bottom: 80px;
+	}
+	
+
+	/* Footer styles */
+	.footer_btn{
+		margin-bottom: 48px;
+	}
+	.footer{
+		text-align: center;
+		margin-bottom: 100px;
+	}
+}
